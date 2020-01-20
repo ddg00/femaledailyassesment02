@@ -15,4 +15,9 @@ export class AppController {
   async getData() {
     return await this.appService.getAll();
   }
+
+  @Get('pivot')
+  async getPivot() {
+    return await this.appService.pivot();
+  }
 }

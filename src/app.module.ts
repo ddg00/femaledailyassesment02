@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import {ShopinglogEntity} from './shopinglog.entity';
+import {Shopinglog} from './shopinglog.entity';
 
 @Module({
   imports: [
@@ -14,10 +14,10 @@ import {ShopinglogEntity} from './shopinglog.entity';
       username: 'pivot',
       password: 'pivot',
       database: 'pivot',
-      entities: [ShopinglogEntity],
+      entities: [Shopinglog],
       synchronize: true,
     }),
-    TypeOrmModule.forFeature([ShopinglogEntity]),
+    TypeOrmModule.forFeature([Shopinglog]),
   ],
   controllers: [AppController],
   providers: [AppService],
