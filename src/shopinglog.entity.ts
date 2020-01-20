@@ -6,13 +6,13 @@ export class ShopinglogEntity {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({ length: 255 })
     name: string;
 
-    @Column()
+    @Column({ length: 255 })
     email: string;
 
-    @Column()
+    @Column({ length: 255 })
     item: string;
 
     @Column('int')

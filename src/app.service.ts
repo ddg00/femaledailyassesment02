@@ -17,4 +17,8 @@ export class AppService {
   getAll(): Promise<ShopinglogEntity[]> {
     return this.repository.find();
   }
+
+  pivot() {
+    return 'test';
+  }
 }

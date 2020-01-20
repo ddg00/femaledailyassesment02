@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-sh build.sh
+#sh build.sh
 docker-compose -f ./docker-compose.yaml up --force-recreate -d

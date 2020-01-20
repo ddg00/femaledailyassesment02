@@ -9,7 +9,7 @@ import {ShopinglogEntity} from './shopinglog.entity';
     TypeOrmModule.forRoot({
       // sql connection
       type: 'mysql',
-      host: 'db',
+      host: 'localhost',
       port: 3306,
       username: 'pivot',
       password: 'pivot',
