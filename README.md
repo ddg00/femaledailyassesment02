@@ -17,6 +17,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Running the app use docker
+
+```bash
+# to start
+$ npm run compose-up
+
+# to remove
+$ npm run compose-down
+```
+
 ## Test
 
 ```bash

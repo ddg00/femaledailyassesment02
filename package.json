@@ -18,8 +18,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "compose-up": "sh up-compose.sh",
-    "compose-down": "sh down-compose.sh"
+    "compose-up": "sh compose-up.sh",
+    "compose-down": "sh compose-down.sh"
   },
   "dependencies": {
     "@nestjs/common": "^6.7.2",
