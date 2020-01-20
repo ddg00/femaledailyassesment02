@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pivot</title>
+    <style>
+        body {
+            font:15px arial,sans-serif;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            padding: 5px;
+            font-size: 24px;
+            background-color: #999;
+            color: #fff;
+        }
+        table {
+            margin: 10px;
+        }
+        th, td {
+            padding: 5px;
+            border: 1px solid #999;
+        }
+        th {
+            background: #ccc;
+        }
+        tr:nth-child(odd) {
+            background: #eee;
+        }
+        td a {
+            color: #000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<table>
+<thead>
+<th> Full Name </th>
+<th> Email </th>
+<th> Barang1 </th>
+<th> Barang2 </th>
+<th> Barang3 </th>
+<th> Barang4 </th>
+<th> Barang5 </th>
+<th> Barang6 </th>
+<th> Barang7 </th>
+<th> Barang8 </th>
+<th> Barang9 </th>
+<th> Barang10 </th>
+</thead>
+<tbody>
+{{#each data}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.Barang1}}</td>
+        <td>{{this.Barang2}}</td>
+        <td>{{this.Barang3}}</td>
+        <td>{{this.Barang4}}</td>
+        <td>{{this.Barang5}}</td>
+        <td>{{this.Barang6}}</td>
+        <td>{{this.Barang7}}</td>
+        <td>{{this.Barang8}}</td>
+        <td>{{this.Barang9}}</td>
+        <td>{{this.Barang10}}</td>
+    </tr>
+{{/each}}
+</tbody>
+</table>
+</body>
+</html>

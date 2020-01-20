@@ -26,16 +26,16 @@ export class AppService {
       SELECT
         name,
         MAX(email) AS email,
-        SUM(CASE WHEN item = 'Barang1' THEN quantity END) AS Barang1,
-        SUM(CASE WHEN item = 'Barang2' THEN quantity END) AS Barang2,
-        SUM(CASE WHEN item = 'Barang3' THEN quantity END) AS Barang3,
-        SUM(CASE WHEN item = 'Barang4' THEN quantity END) AS Barang4,
-        SUM(CASE WHEN item = 'Barang5' THEN quantity END) AS Barang5,
-        SUM(CASE WHEN item = 'Barang6' THEN quantity END) AS Barang6,
-        SUM(CASE WHEN item = 'Barang7' THEN quantity END) AS Barang7,
-        SUM(CASE WHEN item = 'Barang8' THEN quantity END) AS Barang8,
-        SUM(CASE WHEN item = 'Barang9' THEN quantity END) AS Barang9,
-        SUM(CASE WHEN item = 'Barang10' THEN quantity END) AS Barang10
+        SUM(CASE WHEN item = 'Barang1' THEN quantity ELSE 0 END) AS Barang1,
+        SUM(CASE WHEN item = 'Barang2' THEN quantity ELSE 0 END) AS Barang2,
+        SUM(CASE WHEN item = 'Barang3' THEN quantity ELSE 0 END) AS Barang3,
+        SUM(CASE WHEN item = 'Barang4' THEN quantity ELSE 0 END) AS Barang4,
+        SUM(CASE WHEN item = 'Barang5' THEN quantity ELSE 0 END) AS Barang5,
+        SUM(CASE WHEN item = 'Barang6' THEN quantity ELSE 0 END) AS Barang6,
+        SUM(CASE WHEN item = 'Barang7' THEN quantity ELSE 0 END) AS Barang7,
+        SUM(CASE WHEN item = 'Barang8' THEN quantity ELSE 0 END) AS Barang8,
+        SUM(CASE WHEN item = 'Barang9' THEN quantity ELSE 0 END) AS Barang9,
+        SUM(CASE WHEN item = 'Barang10' THEN quantity ELSE 0 END) AS Barang10
       FROM
         shopinglog
       GROUP BY name

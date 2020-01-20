@@ -12,12 +12,14 @@ export class AppController {
   }
 
   @Get('shoping-log')
+  @Render('datashopinglog')
   async getData() {
-    return await this.appService.getAll();
+    return { data : await this.appService.getAll() };
   }
 
   @Get('pivot')
+  @Render( 'pivot' )
   async getPivot() {
-    return await this.appService.pivot();
+    return { data: await this.appService.pivot() };
   }
 }
